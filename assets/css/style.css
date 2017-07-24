@@ -107,3 +107,10 @@ footer {
 footer p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+/* WIDTH OF 640 or SMALLER */
+@media only screen and (max-width: 640px) {
+
+
+	
+}
