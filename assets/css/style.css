@@ -1,0 +1,42 @@
+h1 {
+	background-color: #4aaaa5;
+	color: white;
+	/*width: 310px;*/
+	padding: 0px 20px 0px 20px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+h1, h2 {
+	font-size: 30px;
+}
+
+h1, h2, h3 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-weight: 600;
+}
+
+.navbar {
+	border-top: none;
+}
+
+.navbar-header {
+	background-color: #4aaaa5;
+}
+
+.navbar-default {
+	background-color: white;
+}
+
+.navbar-collapse ul {
+	justify-content: space-between;
+	display: flex;
+}
+
+li {
+	color: #666;
+}
+
+li:hover {
+	color: #666;
+}
