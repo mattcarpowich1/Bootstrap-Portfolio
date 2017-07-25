@@ -381,5 +381,11 @@ footer p {
 
 	.nav {
 		margin-top: 10px;
+		padding: none;
 	}
+
+	.navbar-nav li {
+	/*padding-right: 10px;*/
+	padding-left: 0px;
+}
 }
