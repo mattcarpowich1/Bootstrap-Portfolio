@@ -23,7 +23,6 @@ footer, #wrapper:after {
 h1 {
 	background-color: #4aaaa5;
 	color: white;
-	/*width: 310px;*/
 	padding: 0px 20px 10px 20px;
 	text-align: center;
 	white-space: nowrap;
@@ -41,6 +40,13 @@ h2, h3 {
 h1, h2, h3 {
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	font-weight: 600;
+}
+
+h4 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 1.2em;
+	color: white;
+	text-shadow: 1px 1px #000;
 }
 
 .navbar {
@@ -75,14 +81,6 @@ h1, h2, h3 {
 	border-bottom: 2px solid #ddd;
 }
 
-/*li {
-	color: #666;
-}
-
-li:focus {
-	color: #666;
-}*/
-
 section {
 	background-color: white;
 	border: 1px solid #ddd;
@@ -104,6 +102,56 @@ section {
 	width: 200px;
 }
 
+.portfolio-image {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.portfolio-image:nth-child(2) {
+	padding-left: 30px;
+}
+
+.portfolio-image:nth-child(1) {
+	padding-right: 30px;
+}
+
+.portfolio-image:nth-child(2) div {
+	margin-left: 30px;
+}
+
+.portfolio-image:nth-child(1) div {
+	margin-right: 30px;
+}
+
+.portfolio-image img {
+	width: 100%;
+	height: auto;
+}
+
+.project-title {
+	background-color: rgba(74, 170, 165, .9);
+	text-shadow: 1px 1px #000;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 22%;
+	top: 73%;
+	left: 0px;
+	color: white;
+	width: calc(100% - 30px);
+	padding: 16px 0px 16px 0px;
+	text-align: center;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 1.2em;
+}
+
+.title {
+	color: white;
+}
+
+
 #image_container a img {
 	padding: 0px 1px 0px 1px;
 	border-radius: 8px;
@@ -124,8 +172,37 @@ footer p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-/* WIDTH OF 640 or SMALLER */
-@media only screen and (max-width: 576px) {
+/* WIDTH OF 1199px or SMALLER */
+@media only screen and (max-width: 1199px) {
+	.portfolio-image:nth-child(2) {
+		padding-left: 30px;
+	}
+
+	.portfolio-image:nth-child(1) {
+		padding-right: 30px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.portfolio-image:nth-child(2) {
+		padding-left: 30px;
+	}
+
+	.portfolio-image:nth-child(1) {
+		padding-right: 30px;
+	}
+
+	.portfolio-image:nth-child(2) div {
+		padding-left: 30px;
+	}
+
+	.portfolio-image:nth-child(1) div {
+		padding-right: 30px;
+	}
+}
+
+/* WIDTH OF 767 or SMALLER */
+@media only screen and (max-width: 767px) {
 	#matt_pic {
 		float: none;
 		margin-bottom: 20px;
@@ -133,5 +210,21 @@ footer p {
 		height: auto;
 	}
 
+	.portfolio-image:nth-child(2) {
+		padding-left: 0px;
+	}
 
+	.portfolio-image:nth-child(1) {
+		padding-right: 0px;
+	}
+
+	.portfolio-image:nth-child(2) div {
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.portfolio-image:nth-child(1) div {
+		margin-right: 0px;
+		width: 100%;
+	}
 }
