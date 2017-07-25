@@ -146,7 +146,7 @@ section {
 	left: 0px;
 	color: white;
 	width: calc(100% - 30px);
-	padding: 16px 0px 16px 0px;
+	padding: 10px 0px 10px 0px;
 	text-align: center;
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	font-size: 1.2em;
@@ -214,6 +214,13 @@ footer p {
 		margin-bottom: 20px;
 		min-width: 100%;
 		height: auto;
+	}
+
+	.project-title {
+		/*bottom: 10%;*/
+		/*top: 75%;*/
+		/*height: 42px;*/
+		font-size: 4vw;
 	}
 
 	.portfolio-image:nth-child(2) {
